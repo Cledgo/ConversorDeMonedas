@@ -20,11 +20,31 @@ you can found this program on www.Github.com/cledgo
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+//TO CALL ALL THE AVAILABLE CURRENCIS:
+HttpClient client1 = HttpClient.newHttpClient();
+
+        HttpRequest request1 = HttpRequest.newBuilder()
+                .uri(URI.create("https://v6.exchangerate-api.com/v6/3a117b967a3322801a9a501b/codes"))
+                .build();
+
+        HttpResponse<String> response1 = client1
+                .send(request1, HttpResponse.BodyHandlers.ofString());
+
+
+//TO MAKE THE CONVERSION
+ HttpClient client = HttpClient.newHttpClient();
+
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(direccion))
+                .build();
+
+        HttpResponse<String> response = client
+                .send(request, HttpResponse.BodyHandlers.ofString());
+        String json = response.body();
+
+//ALL OF THE REST ARE SOUT, SCANNERS AND INFORMATION CONVERSION WITH GSON
+
+Gson gson = new Gson();
 
 ## Help
 

@@ -4,7 +4,7 @@ Conversor de Monedas. AluraxOracle Java Bootcamp
 
 ## Description
 
-This project help us to make converison beatwean different currencies. in this project we used an API from https://www.exchangerate-api.com/.
+This project help us to make converison between different currencies. in this project we used an API from https://www.exchangerate-api.com/.
 
 ## Getting Started
 
